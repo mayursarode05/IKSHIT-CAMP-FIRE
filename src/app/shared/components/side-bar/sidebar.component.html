@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="">
+        <aside id="sidebar">
+            <div class="d-flex">
+              <button class="toggle-btn" #toggleBtn type="button">
+                <fa-icon [icon]="fa.faGripfire" class="text-white fs-1"></fa-icon>
+              </button>
+              <div class="sidebar-logo">
+                
+              </div>
+            </div>
+            <ul class="sidebar-nav">
+              <!-- <li class="sidebar-item">
+                <a href="#" class="sidebar-link">
+                  <i class="bi bi-person"></i>
+                  <span>Profile</span>
+                </a>
+              </li> -->
+              <li class="sidebar-item">
+                <a routerLink="user/newpassport" class="sidebar-link">
+                  <fa-icon [icon]="fa.faCommentDots" class="text-white fs-4"></fa-icon>
+                  <span>Our Services</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a routerLink="contactUs" class="sidebar-link">
+                  <fa-icon [icon]="fa.faCommentDots" class="text-white fs-4"></fa-icon>
+                  <span>Contact Us</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a routerLink="aboutUs" class="sidebar-link">
+                  <fa-icon [icon]="fa.faCommentDots" class="text-white fs-4"></fa-icon>
+                  <span>About Us</span>
+                </a>
+              </li>
+
+            </ul>
+            <!-- <div class="sidebar-footer">
+              <a routerLink="user/newpassport" class="sidebar-link">
+                  <i class="bi bi-power"></i>
+                <span>Logout</span>
+              </a>
+            </div> -->
+          </aside>
+    </div>
+    <div class="main p-3">
+        <div class="">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
