@@ -32,4 +32,13 @@
             </div>
         </div>
     </div>
+
+    <!-- Button -->
+    <button class="btn btn-dark rounded-square scroll-to-top-button hide" (click)="scrollToTop()" [class.hide]="!isVisible"
+        pTooltip="Go to top" tooltipPosition="left" placeholder="Left">
+        <svg width="24" height="24" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.52246 5.06689L6.08496 8.50439L2.64746 5.06689" stroke="#fff" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+        </svg>
+    </button>
 </footer>
